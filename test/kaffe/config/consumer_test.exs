@@ -152,7 +152,7 @@ defmodule Kaffe.Config.ConsumerTest do
         auto_start_producers: false,
         allow_topic_auto_creation: false,
         begin_offset: :earliest,
-        ssl: true
+        ssl: [verify: :verify_none]
       ],
       message_handler: SilentMessage,
       async_message_ack: false,
